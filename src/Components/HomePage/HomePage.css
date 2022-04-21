@@ -1,10 +1,17 @@
-body {
-height: 90vh;
-width: 100vw;
-color: aliceblue;
+.milas{
+  height: 300px;
+  width: 300px;
 }
 
-.milas{
-  height: 20vh;
-  width: 20vw;
+.HomePage {
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  color: rgba(17, 13, 72, 0.657);
+  font-size: 1.6rem;
+  height: 10vh;
+  text-align: center;
+  margin: 20px;
 }
