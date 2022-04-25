@@ -16,13 +16,13 @@ const HomePage = () => {
   setTimeout(() => {
     setImage(MilasB);
     setButton("pulse-button");
-  }, 12100);
+  }, 13600);
 
   const { text } = useTypewriter({
     words: [
-      "Bonjour et bienvenu a vous. Je m'appelle Salim et je suis un jeune développeur \
-      web & passionné de nouvelles technologies. J'ai suivi une formation intensive aupres de la wild code school\
-     et je suis actuellement en stage dans lequelle je decouvre react native.",
+      "Bonjour et bienvenu a vous. Je m'appelle Paul ici vous découvrirez Salim qui est  un jeune développeur \
+      web & passionné de nouvelles technologies. et qui a suivi tout comme moi une formation intensive aupres de la wild code school\
+     il est actuellement en stage dans lequelle il decouvre react native.",
     ],
     typeSpeed: 32,
   });

@@ -13,7 +13,7 @@ import "./NavBar.css";
       <div className="main-header">
         <div className="containerlogo">
 
-        <a href='#' className="brand-logo">
+        <a href='/Portfolio' className="brand-logo">
           <img className="milas" src={MilasA} alt="Logo Salim HEMMAR" />
         </a>
         </div>
@@ -25,16 +25,16 @@ import "./NavBar.css";
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#About">About</a>
             </li>
             <li>
-              <a href="#">Skill</a>
+              <a href="#Skill">Skill</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
