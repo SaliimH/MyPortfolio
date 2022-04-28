@@ -28,14 +28,16 @@ const HomePage = () => {
   });
 
   return (
+    <div className="ContainerHomepage">
     <div className="HomePage">
-      <img className="milas" src={image} alt="milas" />
+      <img className="Paul" src={image} alt="milas" />
       <span className="intro">{text}</span>
       <div>
         <Link to="/Portfolio">
           <button className={button}>Portfolio</button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

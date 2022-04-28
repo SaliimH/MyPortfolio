@@ -46,9 +46,9 @@
 }
 
 .main-header {
-  background-color: rgba(17, 13, 72);
+  background: radial-gradient(rgb(222 199 215), #5b72e0b3);
   min-height: 3.5rem;
-  box-shadow: 0 0 10px 0 rgba(128, 11, 174, 0.296);
+  box-shadow: 0 0 10px 0 rgba(46, 117, 203, 0.296);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,15 +66,16 @@
 
 .main-nav a {
   text-decoration: none;
-  color: whitesmoke;
-  padding: 1.25em 1.5em;
-  border-radius: 1.25em;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1.1em 0.7em;
+  border-radius:30px;
   margin-right: 5em;
 }
 .main-nav a:hover {
-  background: #9403f4;
-  box-shadow: 0 0 5px #9403f4, 0 0 25px #9403f4, 0 0 50px #9403f4,
-    0 0 100px #9403f4;
+  background: #870d85a3;
+  box-shadow: 0 0 5px #a740a66e, 0 0 25px #a740a66e, 0 0 50px #a740a66e,
+    0 0 100px #a740a66e;
 }
 
 .toggle-button .bar {
@@ -110,7 +111,7 @@
     padding: 0.6rem 0;
   }
   .main-nav a {
-    padding: 0;
+    padding: 10px;
   }
   .main-nav ul.active {
     display: flex;
