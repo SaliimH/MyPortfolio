@@ -1,44 +1,66 @@
-/* eslint-disable no-multi-str */
-import React, { useState } from "react";
-import { useTypewriter } from "react-simple-typewriter";
-import { Link } from "react-router-dom";
+import React from "react";
+import Navbar from "../Navbar/NavBar";
 
 
-import MilasA from "../../Assets/Milas.gif";
-import MilasB from "../../Assets/Milas2.png";
 import "./HomePage.css";
 
 const HomePage = () => {
-  const [image, setImage] = useState(MilasA);
-
-  const [button, setButton] = useState("invisible");
-
-  setTimeout(() => {
-    setImage(MilasB);
-    setButton("pulse-button");
-  }, 13600);
-
-  const { text } = useTypewriter({
-    words: [
-      "Bonjour et bienvenu a vous. Je m'appelle Paul ici vous découvrirez Salim qui est  un jeune développeur \
-      web & passionné de nouvelles technologies. et qui a suivi tout comme moi une formation intensive aupres de la wild code school\
-     il est actuellement en stage dans lequelle il decouvre react native.",
-    ],
-    typeSpeed: 32,
-  });
-
   return (
     <div className="ContainerHomepage">
-    <div className="HomePage">
-      <img className="Paul" src={image} alt="milas" />
-      <span className="intro">{text}</span>
-      <div>
-        <Link to="/Portfolio">
-          <button className={button}>Portfolio</button>
-        </Link>
-      </div>
+
+<div className="header">
+<Navbar />
+<p className="txt-wl">Welcome to Salim’s Portfolio scroll down to see The descrption </p>
+
+<svg class="arrows">
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+							<path class="a2" d="M0 20 L30 52 L60 20"></path>
+							<path class="a3" d="M0 40 L30 72 L60 40"></path>
+						</svg>
+</div>
+<div className="container">
+</div>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
+     <p>Salut tu est sur la hompage</p>
     </div>
-    </div>
+    
   );
 };
 
