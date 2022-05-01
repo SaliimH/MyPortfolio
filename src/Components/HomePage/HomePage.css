@@ -1,65 +1,207 @@
-.milas{
-  height: 300px;
-  width: 300px;
-}
-
-.HomePage {
-  margin-top: 20vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.intro {
-  color: rgba(17, 13, 72, 0.657);
-  font-size: 1.6rem;
-  height: 20vh;
-  width: 70vw;
-  text-align: center;
-  margin: 20px;
-}
-
-.pulse-button {
-  display: block;
-  width: 100px;
-  height: 100px;
-  font-size: 1rem;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
-  letter-spacing: -1px;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  background: #312085;
-  cursor: pointer;
-}
-.pulse-button {
-  animation: pulse-animation 2s infinite;
-}
-.invisible{
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body::-webkit-scrollbar {
   display: none;
 }
 
-@keyframes pulse-animation {
+body {
+  margin: 0;
+}
+
+p {
+  margin: 20px;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+.header {
+  background-image: url("../../Assets/Spaceheader.gif");
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 40vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.txt-wl {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* ------------------- Arrow ---------------------------- */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -63px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #f1f1f1;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
   0% {
-    box-shadow: 0 0 0 0px rgba(128, 11, 174, 0.296);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    opacity: 0;
   }
 }
 
-/* ------------------------ media screen ---------------------------- */
-
-@media screen and (max-width: 750px) {
-  .intro {
-    color: rgba(17, 13, 72, 0.657);
-    font-size: 1.6rem;
-    height: 30vh;
-    width: 90vw;
-    text-align: center;
-    margin: 20px;
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
   }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+/*------------------------  middl page  --------------------------------- */
+
+.cntr-bdy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 2.5rem;
+}
+.cntr-atme {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.crlc {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('../../Assets/1641297370605.jpg');
+  background-size: cover;
+  margin-bottom: -1.5rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #484382,
+    0 0 0.8rem #484382, 0 0 2.8rem #484382, inset 0 0 1.3rem #484382;
+}
+
+.rectgl {
+  width: 70vw;
+  border-radius: 35px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #4c6b93;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #4c6b93,
+    0 0 0.8rem #4c6b93, 0 0 2.8rem #4c6b93, inset 0 0 1.3rem #4c6b93;
+}
+
+
+.ppp {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: -4.5rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #484382, 0 0 0.8rem #484382, 0 0 2.8rem #484382, inset 0 0 1.3rem #484382;
+}
+
+.conttain-ppp {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p1 {
+  font-size: 1.2rem;
+  word-spacing: 13em;
+  color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #382bad,
+  0 0 21px #382bad,
+  0 0 42px #382bad,
+  0 0 82px #382bad;
+}
+
+.skll{
+  font-size: 1.5rem;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #382bad,
+  0 0 21px #382bad,
+  0 0 42px #382bad,
+  0 0 82px #382bad;
+}
+
+
+/*------------------------  Media screen --------------------------------- */
+
+@media only screen and (max-width: 800px){
+  .header {
+    margin-bottom: 20vh;
+}
+  
+  .txt-wl {
+    text-align: center;
+  }
+  .arrows {
+    margin-left: -30px;
+  }
+  .conttain-ppp {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ppp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: -4.5rem;
+  }
+  .p1 {
+    word-spacing: 11em;
+  }
+
 }
