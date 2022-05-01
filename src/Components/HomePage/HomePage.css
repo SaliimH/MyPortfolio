@@ -1,115 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-body::-webkit-scrollbar { display: none; }
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body::-webkit-scrollbar {
+  display: none;
+}
 
-
-
-body{
+body {
   margin: 0;
 }
 
-p{
+p {
   margin: 20px;
-  font-size: 1.5rem;
-font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
 }
 
-.header{
-  background-image: url("../../Assets/Spaceheader.jpg");
+.header {
+  background-image: url("../../Assets/Spaceheader.gif");
   height: 100vh;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   position: relative;
-  margin-bottom: 50vh;
+  margin-bottom: 40vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
-
-.txt-wl{
-  color: #FFF;
+.txt-wl {
+  color: #fff;
   font-size: 1.5rem;
-
 }
 
-.container{
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  color: #f1f1f1;
-  background-color: #000;
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-}
 /* ------------------- Arrow ---------------------------- */
 .arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -63px;
-	bottom: 20px;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -63px;
+  bottom: 20px;
 }
 
 .arrows path {
-	stroke: #f1f1f1;
-	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+  stroke: #f1f1f1;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
+/*------------------------  middl page  --------------------------------- */
+
+.cntr-bdy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 2.5rem;
+}
+.cntr-atme {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.crlc {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('../../Assets/1641297370605.jpg');
+  background-size: cover;
+  margin-bottom: -1.5rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #484382,
+    0 0 0.8rem #484382, 0 0 2.8rem #484382, inset 0 0 1.3rem #484382;
+}
+
+.rectgl {
+  width: 70vw;
+  border-radius: 35px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #4c6b93;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #4c6b93,
+    0 0 0.8rem #4c6b93, 0 0 2.8rem #4c6b93, inset 0 0 1.3rem #4c6b93;
+}
+
+
+.ppp {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: -4.5rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #484382, 0 0 0.8rem #484382, 0 0 2.8rem #484382, inset 0 0 1.3rem #484382;
+}
+
+.conttain-ppp {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p1 {
+  font-size: 1.2rem;
+  word-spacing: 13em;
+  color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #382bad,
+  0 0 21px #382bad,
+  0 0 42px #382bad,
+  0 0 82px #382bad;
+}
+
+.skll{
+  font-size: 1.5rem;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #382bad,
+  0 0 21px #382bad,
+  0 0 42px #382bad,
+  0 0 82px #382bad;
+}
+
 
 /*------------------------  Media screen --------------------------------- */
 
-
-@media only screen and (max-width: 800px) {
-
-  .arrows {
-    width: 60px;
-    height: 72px;
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    bottom: 20px;
+@media only screen and (max-width: 800px){
+  .header {
+    margin-bottom: 20vh;
 }
+  
+  .txt-wl {
+    text-align: center;
+  }
+  .arrows {
+    margin-left: -30px;
+  }
+  .conttain-ppp {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ppp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: -4.5rem;
+  }
+  .p1 {
+    word-spacing: 11em;
+  }
 
 }
