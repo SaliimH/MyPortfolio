@@ -84,7 +84,7 @@ const Skills = () => {
 <div className="cntnr-skills">
 {SkillsTabl.map(({Name, Image, Link}, index) => (
   
-  <a key={index} href={Link}>
+  <a key={index} href={Link} target="_blank" rel="noreferrer">
         <img key={index} className='imgskill' src={Image} alt={Name} />
       </a>
       ))}

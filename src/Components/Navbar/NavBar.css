@@ -52,6 +52,7 @@ body::-webkit-scrollbar {
 }
 
 .main-header {
+  z-index: 3;
   font-family: "Trebuchet MS", sans-serif;
   position: fixed;
   top: 0;
