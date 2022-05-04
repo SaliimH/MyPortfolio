@@ -305,7 +305,7 @@ button:hover {
   background-clip: text;
   font-size: 1rem;
   -webkit-text-fill-color: transparent;  
-  animation: move 700s linear infinite;
+  animation: move 1000s linear infinite;
 }
 
 @keyframes move {
