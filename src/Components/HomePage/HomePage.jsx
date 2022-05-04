@@ -1,7 +1,9 @@
 import React from "react";
+import { Carousel } from "3d-react-carousal";
+import ScrollAnimation from "react-animate-on-scroll";
+
 import Navbar from "../Navbar/NavBar";
 import Pppicture from "../../Assets/1641297370605.jpg";
-import { Carousel } from "3d-react-carousal";
 import Skills from "../Skills/SkillsTable";
 import Llinkd from "../../Assets/Logos/linkedin.png";
 import Lgmail from "../../Assets/Logos/gmail.png";
@@ -12,6 +14,7 @@ import Btobeach from "../../GiphProject/BtoBeach.gif";
 import ManyToMany from "../../GiphProject/ManyToMany.gif";
 import Cv from "../../pdf/Maquette.pdf";
 import "./HomePage.css";
+import "./Animation.css";
 
 const HomePage = () => {
   let slides = [
@@ -45,34 +48,53 @@ const HomePage = () => {
         </svg>
       </div>
       <div className="cntr-bdy">
-        <div className="cntr-atme">
+        <ScrollAnimation
+          animateIn="bounceInRight"
+          animateOut="fadeOut"
+          duration={1.2}
+        >
+          <div className="cntr-atme">
+            <div className="rectgl">
+              <p>
+                Je m'appelle Salim et je me suis énormément cherché.
+                <br />
+                Avoir un but fixe a été pour moi difficile, car très curieux de
+                nature.
+                <br />
+                j'aime apprendre pleins de nouvelles choses que cela me soit
+                utile ou non ; en parallèle, j'ai toujours été intéressé par le
+                domaine informatique et je me suis enfin lancé dans une
+                formation en tant que développeur web à la Wild code School.
+                <br />
+                Quoi de mieux que le métier de développeur web afin de découvrir
+                énormément de domaine et surtout de ne jamais cesser
+                d'apprendre, car ce monde est un monde en constante évolution.🚀
+              </p>
+            </div>
+            <div className="conttain-ppp">
+              <img className="ppp" src={Pppicture} alt="Salim's head" />
+              <ScrollAnimation duration={5} animateIn="fadeIn">
+                <p className="p1">ABOUT ME</p>
+              </ScrollAnimation>
+            </div>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation
+          animateIn="bounceInLeft"
+          animateOut="fadeOut"
+          duration={1.2}
+        >
+          <ScrollAnimation duration={5} animateIn="fadeIn">
+            <p className="skll">SKILLS</p>
+          </ScrollAnimation>
+
           <div className="rectgl">
-            <p>
-              Je m'appelle Salim et je me suis énormément cherché.
-              <br />
-              Avoir un but fixe a été pour moi difficile, car très curieux de
-              nature.
-              <br />
-              j'aime apprendre pleins de nouvelles choses que cela me soit utile
-              ou non ; en parallèle, j'ai toujours été intéressé par le domaine
-              informatique et je me suis enfin lancé dans une formation en tant
-              que développeur web à la Wild code School.
-              <br />
-              Quoi de mieux que le métier de développeur web afin de découvrir
-              énormément de domaine et surtout de ne jamais cesser d'apprendre,
-              car ce monde est un monde en constante évolution.🚀
-            </p>
+            <Skills />
           </div>
-          <div className="conttain-ppp">
-            <img className="ppp" src={Pppicture} alt="Salim's head" />
-            <p className="p1">ABOUT ME</p>
-          </div>
-        </div>
-        <p className="skll">SKILLS</p>
-        <div className="rectgl">
-          <Skills />
-        </div>
+        </ScrollAnimation>
       </div>
+      <ScrollAnimation duration={5} animateIn="fadeIn">
       <div className="carou">
         <p className="skll">PROJECTS</p>
         <p className="txtcrsl">
@@ -81,7 +103,10 @@ const HomePage = () => {
         </p>
         <Carousel slides={slides} autoplay={true} interval={24000} />
       </div>
-      <p className="skll pad">CONTACT ME</p>
+      </ScrollAnimation>
+      <ScrollAnimation duration={5}  animateIn="fadeIn">
+        <p className="skll pad">CONTACT ME</p>
+      </ScrollAnimation>
       <div className="footer">
         <a href={Cv} download="CV-Salim-HEMMAR.pdf">
           <button id="testbutton">Salim's CV PDF</button>
@@ -114,20 +139,24 @@ const HomePage = () => {
         <p className="txt-ftr">Ou vous pouvez me suivre via Github</p>
         <div className="cntn-end cnt">
           <a href="https://github.com/SaliimH" target="_blank" rel="noreferrer">
-          <img className="imgskill" src={Lgit} alt="logo Github" />
+            <img className="imgskill" src={Lgit} alt="logo Github" />
           </a>
           <p>https://github.com/SaliimH</p>
         </div>
-<div className="cnt-pend">
-
-        <p className="pend">
-          Remerciement a 
-          <a className="rainbowText" target="_blank" href="https://icons8.com" rel="noreferrer">
-            Icons8  
-          </a>
-           pour les logos et icons present 🔥
-        </p>
-</div>
+        <div className="cnt-pend">
+          <p className="pend">
+            Remerciement a
+            <a
+              className="rainbowText"
+              target="_blank"
+              href="https://icons8.com"
+              rel="noreferrer"
+            >
+              Icons8
+            </a>
+            pour les logos et icons present 🔥
+          </p>
+        </div>
       </div>
     </div>
   );
