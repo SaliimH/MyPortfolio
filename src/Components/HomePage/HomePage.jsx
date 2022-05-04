@@ -7,20 +7,27 @@ import Llinkd from "../../Assets/Logos/linkedin.png";
 import Lgmail from "../../Assets/Logos/gmail.png";
 import Lgit from "../../Assets/Logos/github.png";
 
-import Cv from "../../pdf/Maquette.pdf"
+import Snapeat from "../../GiphProject/Snapeat.gif";
+import Btobeach from "../../GiphProject/BtoBeach.gif";
+import ManyToMany from "../../GiphProject/ManyToMany.gif";
+import Cv from "../../pdf/Maquette.pdf";
 import "./HomePage.css";
 
 const HomePage = () => {
   let slides = [
-    <img src="https://picsum.photos/800/500/?random" alt="1" />,
-    <img src="https://picsum.photos/800/501/?random" alt="2" />,
-    <img src="https://picsum.photos/800/502/?random" alt="3" />,
-    <img src="https://picsum.photos/800/503/?random" alt="4" />,
-    <img src="https://picsum.photos/800/503/?random" alt="4" />,
-    <img src="https://picsum.photos/800/503/?random" alt="4" />,
-    <img src="https://picsum.photos/800/503/?random" alt="4" />,
-    <img src="https://picsum.photos/800/503/?random" alt="4" />,
-    <img src="https://picsum.photos/800/504/?random" alt="5" />,
+    <a href="https://github.com/SaliimH/smoothy-P2/tree/dev">
+      <img className="giphProject" src={Snapeat} alt="Giph Snapeat website" />
+    </a>,
+    <a href="https://github.com/SaliimH/Bto-Beach-">
+      <img className="giphProject" src={Btobeach} alt="Giph Btobeach website" />
+    </a>,
+    <a href="https://github.com/SaliimH/ManyToMany.git">
+      <img
+        className="giphProject"
+        src={ManyToMany}
+        alt="Giph Many To Many website"
+      />
+    </a>,
   ];
 
   return (
@@ -72,32 +79,55 @@ const HomePage = () => {
           *Un petit carouselle et leurs link code des projets realiser , les
           projets ne sont pas en ligne
         </p>
-        <Carousel slides={slides} autoplay={true} interval={9000} />
+        <Carousel slides={slides} autoplay={true} interval={24000} />
       </div>
       <p className="skll pad">CONTACT ME</p>
       <div className="footer">
-
-      <a href={Cv} download='CV-Salim-HEMMAR.pdf'>
-                  <button id="testbutton">Salim's CV PDF</button>
-                </a>
-        <p>Vous pouvez me contacter via </p>
-        <div className="test">
-          <div className="cnt">
-
-        <img  className='imgskill' src={Llinkd} alt='logo Linkedin' />
-        <p> https://www.linkedin.com/in/salim-hemmar</p>
-          </div>
-          <div className="cnt">
-
-        <img  className='imgskill' src={Lgmail} alt='logo Gmail' />
-        <p> sh.hemmar@gmail.com</p>
+        <a href={Cv} download="CV-Salim-HEMMAR.pdf">
+          <button id="testbutton">Salim's CV PDF</button>
+        </a>
+        <p className="txt-ftr">Vous pouvez me contacter via </p>
+        <div className="cntn-end">
+          <div className="cntn-end2">
+            <div className="cnt">
+              <a
+                href="https://www.linkedin.com/in/salim-hemmar"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img className="imgskill" src={Llinkd} alt="logo Linkedin" />
+              </a>
+              <p> https://www.linkedin.com/in/salim-hemmar</p>
+            </div>
+            <div className="cnt">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=sh.hemmar@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img className="imgskill" src={Lgmail} alt="logo Gmail" />
+              </a>
+              <p> sh.hemmar@gmail.com</p>
+            </div>
           </div>
         </div>
-        <p>Ou vous pouvez me suivre via Github</p>
-        <div className="test">
-        <img  className='imgskill' src={Lgit} alt='logo Github' />
-       <p>https://github.com/SaliimH</p>
+        <p className="txt-ftr">Ou vous pouvez me suivre via Github</p>
+        <div className="cntn-end cnt">
+          <a href="https://github.com/SaliimH" target="_blank" rel="noreferrer">
+          <img className="imgskill" src={Lgit} alt="logo Github" />
+          </a>
+          <p>https://github.com/SaliimH</p>
         </div>
+<div className="cnt-pend">
+
+        <p className="pend">
+          Remerciement a 
+          <a className="rainbowText" target="_blank" href="https://icons8.com" rel="noreferrer">
+            Icons8  
+          </a>
+           pour les logos et icons present 🔥
+        </p>
+</div>
       </div>
     </div>
   );
