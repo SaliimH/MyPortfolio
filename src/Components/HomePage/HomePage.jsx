@@ -12,7 +12,7 @@ import Lgit from "../../Assets/Logos/github.png";
 import Snapeat from "../../GiphProject/Snapeat.gif";
 import Btobeach from "../../GiphProject/BtoBeach.gif";
 import ManyToMany from "../../GiphProject/ManyToMany.gif";
-import Cv from "../../pdf/Maquette.pdf";
+import Cv from "../../pdf/CV-HEMMAR-SALIM.pdf";
 import "./HomePage.css";
 import "./Animation.css";
 
@@ -35,19 +35,23 @@ const HomePage = () => {
 
   return (
     <div className="ContainerHomepage">
-      <div className="header">
+      <div  className="header">
         <Navbar />
-        <p className="txt-wl">
-          Welcome to Salim’s Portfolio scroll down to see The descrption
+        <p id="Homme" className="txt-wl">
+          Bienvenu dans le portfolio de Salim. <br/>
+          N’hésitez pas à scroller pour en voir plus ✌️
         </p>
+<a href="#About">
+
 
         <svg className="arrows">
           <path className="a1" d="M0 0 L30 32 L60 0"></path>
           <path className="a2" d="M0 20 L30 52 L60 20"></path>
           <path className="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
+        </a>
       </div>
-      <div className="cntr-bdy">
+      <div id="About" className="cntr-bdy">
         <ScrollAnimation
           animateIn="bounceInRight"
           animateOut="fadeOut"
@@ -85,8 +89,8 @@ const HomePage = () => {
           animateOut="fadeOut"
           duration={1.2}
         >
-          <ScrollAnimation duration={5} animateIn="fadeIn">
-            <p className="skll">SKILLS</p>
+          <ScrollAnimation  duration={5} animateIn="fadeIn">
+            <p  id="Skill" className="skll">SKILLS</p>
           </ScrollAnimation>
 
           <div className="rectgl">
@@ -96,20 +100,19 @@ const HomePage = () => {
       </div>
       <ScrollAnimation duration={5} animateIn="fadeIn">
       <div className="carou">
-        <p className="skll">PROJECTS</p>
+        <p id="Projects" className="skll">PROJECTS</p>
         <p className="txtcrsl">
-          *Un petit carouselle et leurs link code des projets realiser , les
-          projets ne sont pas en ligne
+          *Un petit carrousel et le lien Github des projets réaliser, ils ne sont pas en ligne
         </p>
         <Carousel slides={slides} autoplay={true} interval={24000} />
       </div>
       </ScrollAnimation>
       <ScrollAnimation duration={5}  animateIn="fadeIn">
-        <p className="skll pad">CONTACT ME</p>
+        <p id="Contact" className="skll pad">CONTACT ME</p>
       </ScrollAnimation>
       <div className="footer">
         <a href={Cv} download="CV-Salim-HEMMAR.pdf">
-          <button id="testbutton">Salim's CV PDF</button>
+          <button id="testbutton">Mon CV PDF</button>
         </a>
         <p className="txt-ftr">Vous pouvez me contacter via </p>
         <div className="cntn-end">
