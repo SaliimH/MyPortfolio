@@ -78,7 +78,7 @@ const Skills = () => {
   return (
     <>
 <p>
-  Les langages et framworks de programmation que je connais et
+  Les langages et framworks de programmation que je connais et ai
   utilisés dans mes projets.
 </p>
 <div className="cntnr-skills">
