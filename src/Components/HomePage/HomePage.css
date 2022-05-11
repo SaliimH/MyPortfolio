@@ -120,6 +120,16 @@ p {
   align-items: center;
   margin-bottom: 10vh;
 }
+
+.rainbowAlt {
+  padding: 5px;
+  background-image: 
+    linear-gradient(to right,  #231557,#44107a,#ff1361,indigo,violet); 
+  background-clip: text;
+  font-size: 1rem;
+  -webkit-text-fill-color: transparent;  
+  animation: move 1000s linear infinite;
+}
 .crlc {
   display: flex;
   align-items: center;
@@ -389,7 +399,7 @@ button:hover {
 }
   .carou {
     padding-right: 0;
-    margin-bottom: 20vh;
+    margin-bottom: 5vh;
   }
   .txtcrsl {
     text-align: center;
@@ -438,6 +448,15 @@ button:hover {
 .cntn-end2 {
   display: flex;
   flex-direction: column;
+}
+
+img.giphProject {
+  height: 100%!important;
+  width: 100%!important;
+}
+
+.react-multiple-carousel__arrow {
+  position: relative !important;
 }
 
 }

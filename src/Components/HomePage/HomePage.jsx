@@ -1,6 +1,8 @@
 import React from "react";
-import { Carousel } from "3d-react-carousal";
-import ScrollAnimation from "react-animate-on-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import Navbar from "../Navbar/NavBar";
 import Pppicture from "../../Assets/1641297370605.jpg";
@@ -14,102 +16,151 @@ import Btobeach from "../../GiphProject/BtoBeach.gif";
 import ManyToMany from "../../GiphProject/ManyToMany.gif";
 import Cv from "../../pdf/CV-HEMMAR-SALIM.pdf";
 import "./HomePage.css";
-import "./Animation.css";
 
 const HomePage = () => {
-  let slides = [
-    <a href="https://github.com/SaliimH/smoothy-P2/tree/dev">
-      <img className="giphProject" src={Snapeat} alt="Giph Snapeat website" />
-    </a>,
-    <a href="https://github.com/SaliimH/Bto-Beach-">
-      <img className="giphProject" src={Btobeach} alt="Giph Btobeach website" />
-    </a>,
-    <a href="https://github.com/SaliimH/ManyToMany.git">
-      <img
-        className="giphProject"
-        src={ManyToMany}
-        alt="Giph Many To Many website"
-      />
-    </a>,
-  ];
+  AOS.init();
 
   return (
     <div className="ContainerHomepage">
-      <div  className="header">
+      <div className="header">
         <Navbar />
         <p id="Homme" className="txt-wl">
-          Bienvenu dans le portfolio de Salim. <br/>
+          Bienvenu dans le portfolio de Salim. <br />
           N’hésitez pas à scroller pour en voir plus ✌️
         </p>
-<a href="#About">
-
-
-        <svg className="arrows">
-          <path className="a1" d="M0 0 L30 32 L60 0"></path>
-          <path className="a2" d="M0 20 L30 52 L60 20"></path>
-          <path className="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
+        <a href="#About">
+          <svg className="arrows">
+            <path className="a1" d="M0 0 L30 32 L60 0"></path>
+            <path className="a2" d="M0 20 L30 52 L60 20"></path>
+            <path className="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
         </a>
       </div>
       <div id="About" className="cntr-bdy">
-        <ScrollAnimation
-          animateIn="bounceInRight"
-          animateOut="fadeOut"
-          duration={1.2}
-        >
-          <div className="cntr-atme">
-            <div className="rectgl">
-              <p>
-                Je m'appelle Salim et je me suis énormément cherché.
-                <br />
-                Avoir un but fixe a été pour moi difficile, car très curieux de
-                nature.
-                <br />
-                j'aime apprendre pleins de nouvelles choses que cela me soit
-                utile ou non ; en parallèle, j'ai toujours été intéressé par le
-                domaine informatique et je me suis enfin lancé dans une
-                formation en tant que développeur web à la Wild code School.
-                <br />
-                Quoi de mieux que le métier de développeur web afin de découvrir
-                énormément de domaine et surtout de ne jamais cesser
-                d'apprendre, car ce monde est un monde en constante évolution.🚀
-              </p>
-            </div>
-            <div className="conttain-ppp">
-              <img className="ppp" src={Pppicture} alt="Salim's head" />
-              <ScrollAnimation duration={5} animateIn="fadeIn">
-                <p className="p1">ABOUT ME</p>
-              </ScrollAnimation>
-            </div>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation
-          animateIn="bounceInLeft"
-          animateOut="fadeOut"
-          duration={1.2}
-        >
-          <ScrollAnimation  duration={5} animateIn="fadeIn">
-            <p  id="Skill" className="skll">SKILLS</p>
-          </ScrollAnimation>
-
+        <div data-aos="fade-up" className="cntr-atme">
           <div className="rectgl">
-            <Skills />
+            <p>
+            Je m'appelle Salim et je suis un jeune développeur web de 27 ans.
+              <br />
+              Très motivé d'apprendre, je suis de natures très, curieux. <br />
+              J'ai été passionné par ce domaine dès mon enfance,(merci site du zero ) car en plus d'être vaste en apprentissage, il nous permet de découvrir de nombreux domaines et métiers. <br />Avec moi, vous ne serez pas déçu, je sais m'adapter et travailler en équipe et toujours dans la bonne humeur, je sais aussi être autonome et j'ai le sens des responsabilités.<br />
+              Je suis à la <span className="rainbowAlt">recherche d'une alternance pour septembre 2022</span> et actuellement en je suis en stage ReactNative.<br /> Je me familiarise avec PHP pendant mon temps libre. Si vous avez besoin d'aide dans le cadre d'un projet, je me ferai un plaisir de vous aider. <br /> Et si vous souhaitez me recruter, vous pouvez télécharger mon CV PDF en bas de page. 😎
+            </p>
           </div>
-        </ScrollAnimation>
-      </div>
-      <ScrollAnimation duration={5} animateIn="fadeIn">
-      <div className="carou">
-        <p id="Projects" className="skll">PROJECTS</p>
-        <p className="txtcrsl">
-          *Un petit carrousel et le lien Github des projets réaliser, ils ne sont pas en ligne
+          <div className="conttain-ppp">
+            <img className="ppp" src={Pppicture} alt="Salim's head" />
+
+            <p className="p1">ABOUT ME</p>
+          </div>
+        </div>
+
+        <p data-aos="zoom-out-down" id="Skill" className="skll">
+          SKILLS
         </p>
-        <Carousel slides={slides} autoplay={true} interval={24000} />
+
+        <div data-aos="zoom-out-down" className="rectgl">
+          <Skills />
+        </div>
       </div>
-      </ScrollAnimation>
-      <ScrollAnimation duration={5}  animateIn="fadeIn">
-        <p id="Contact" className="skll pad">CONTACT ME</p>
-      </ScrollAnimation>
+
+      <div className="carou">
+        <p id="Projects" className="skll">
+          PROJECTS
+        </p>
+        <p className="txtcrsl">
+          *Un petit carrousel et le lien Github des projets réaliser, ils ne
+          sont pas en ligne
+        </p>
+      </div>
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={24000}
+        centerMode={false}
+        className=""
+        containerClass="container"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 1,
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 1,
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 1,
+          },
+        }}
+        showDots
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
+        <a href="https://github.com/SaliimH/smoothy-P2/tree/dev">
+          <img
+            className="giphProject"
+            src={Snapeat}
+            alt="Giph Snapeat website"
+            style={{
+              display: "block",
+              height: "90%",
+              margin: "auto",
+              width: "50%",
+            }}
+          />
+        </a>
+        <a href="https://github.com/SaliimH/Bto-Beach-">
+          <img
+            className="giphProject"
+            src={Btobeach}
+            alt="Giph Btobeach website"
+            style={{
+              display: "block",
+              height: "90%",
+              margin: "auto",
+              width: "50%",
+            }}
+          />
+        </a>
+        <a href="https://github.com/SaliimH/ManyToMany.git">
+          <img
+            className="giphProject"
+            src={ManyToMany}
+            alt="Giph Many To Many website"
+            style={{
+              display: "block",
+              height: "90%",
+              margin: "auto",
+              width: "50%",
+            }}
+          />
+        </a>
+      </Carousel>
+
+      <p id="Contact" className="skll pad">
+        CONTACT ME
+      </p>
+
       <div className="footer">
         <a href={Cv} download="CV-Salim-HEMMAR.pdf">
           <button id="testbutton">Mon CV PDF</button>
