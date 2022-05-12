@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-*{
+* {
   scroll-behavior: smooth;
   scroll-padding: 20vh;
 }
@@ -123,11 +123,17 @@ p {
 
 .rainbowAlt {
   padding: 5px;
-  background-image: 
-    linear-gradient(to right,  #231557,#44107a,#ff1361,indigo,violet); 
+  background-image: linear-gradient(
+    to right,
+    #231557,
+    #44107a,
+    #ff1361,
+    indigo,
+    violet
+  );
   background-clip: text;
   font-size: 1rem;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent;
   animation: move 1000s linear infinite;
 }
 .crlc {
@@ -294,7 +300,7 @@ button:hover {
   align-items: center;
   flex-wrap: wrap;
 }
-.cntn-end2{
+.cntn-end2 {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -312,11 +318,19 @@ button:hover {
 
 .rainbowText {
   padding: 5px;
-  background-image: 
-    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
   background-clip: text;
   font-size: 1rem;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent;
   animation: move 1000s linear infinite;
 }
 
@@ -325,9 +339,9 @@ button:hover {
     background-position: 4500vh;
   }
 }
-.pend{
+.pend {
   font-size: 0.9rem;
-    text-align: center;
+  text-align: center;
 }
 
 /*------------------------  Media screen --------------------------------- */
@@ -335,8 +349,8 @@ button:hover {
 @media only screen and (max-width: 800px) {
   .header {
     margin-bottom: 20vh;
-    height: 101vh;
-    width: 101%;
+    height: 100vh;
+    width: 100%;
   }
   .txt-wl {
     text-align: center;
@@ -369,6 +383,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  .main-header {
+    width: 95vw;
+  }
   p {
     font-size: 0.9rem;
     text-align: center;
@@ -396,7 +413,7 @@ button:hover {
   }
   .imgskill {
     width: 70px;
-}
+  }
   .carou {
     padding-right: 0;
     margin-bottom: 5vh;
@@ -412,51 +429,61 @@ button:hover {
     width: 70vw;
     margin: 0px auto 0px -60%;
   }
-  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
-     max-width: 90vw;
-}
-.react-3d-carousel .slider-container .slider-content .slider-single {
-  width: 65%;
-}
-.react-3d-carousel .slider-container .slider-right {
-  border: none;
-  left: 170%;
-  padding: 20px 0px;
-  
-}
-.react-3d-carousel .slider-container .slider-left {
-  border: none;
-  right: 200%;
-  padding: 20px 0px;
-}
+  .react-3d-carousel
+    .slider-container
+    .slider-content
+    .slider-single
+    .slider-single-content
+    img {
+    max-width: 90vw;
+  }
+  .react-3d-carousel .slider-container .slider-content .slider-single {
+    width: 65%;
+  }
+  .react-3d-carousel .slider-container .slider-right {
+    border: none;
+    left: 170%;
+    padding: 20px 0px;
+  }
+  .react-3d-carousel .slider-container .slider-left {
+    border: none;
+    right: 200%;
+    padding: 20px 0px;
+  }
 
-.react-3d-carousel .slider-container .slider-content {
-  left: 96%;
-}
-.pad {
-  padding-right: 0;
-  margin-top: 25vh;
-}
-.footer {
-  padding-right: 0;
-}
-.cnt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cntn-end2 {
-  display: flex;
-  flex-direction: column;
-}
+  .react-3d-carousel .slider-container .slider-content {
+    left: 96%;
+  }
+  .pad {
+    padding-right: 0;
+    margin-top: 25vh;
+  }
+  .footer {
+    padding-right: 0;
+  }
+  .cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cntn-end2 {
+    display: flex;
+    flex-direction: column;
+  }
 
-img.giphProject {
-  height: 100%!important;
-  width: 100%!important;
-}
+  img.giphProject {
+    height: 100% !important;
+    width: 100% !important;
+  }
 
-.react-multiple-carousel__arrow {
-  position: relative !important;
-}
+  .react-multiple-carousel__arrow {
+    bottom: 20px !important;
+    min-width: 65px !important;
+    min-height: 60px !important;
+    border: solid 1px !important;
+  }
 
+  .cntr-atme.aos-init.aos-animate {
+    width: 100vw !important;
+  }
 }

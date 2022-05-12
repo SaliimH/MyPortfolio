@@ -44,7 +44,7 @@ const HomePage = () => {
               <br />
               Très motivé d'apprendre, je suis de natures très, curieux. <br />
               J'ai été passionné par ce domaine dès mon enfance,(merci site du zero ) car en plus d'être vaste en apprentissage, il nous permet de découvrir de nombreux domaines et métiers. <br />Avec moi, vous ne serez pas déçu, je sais m'adapter et travailler en équipe et toujours dans la bonne humeur, je sais aussi être autonome et j'ai le sens des responsabilités.<br />
-              Je suis à la <span className="rainbowAlt">recherche d'une alternance pour septembre 2022</span> et actuellement en je suis en stage ReactNative.<br /> Je me familiarise avec PHP pendant mon temps libre. Si vous avez besoin d'aide dans le cadre d'un projet, je me ferai un plaisir de vous aider. <br /> Et si vous souhaitez me recruter, vous pouvez télécharger mon CV PDF en bas de page. 😎
+              Je suis à la <span className="rainbowAlt">recherche d'une alternance pour septembre 2022</span> et actuellement je suis en stage ReactNative.<br /> Je me familiarise avec PHP pendant mon temps libre. Si vous avez besoin d'aide dans le cadre d'un projet, je me ferai un plaisir de vous aider. <br /> Et si vous souhaitez me recruter, vous pouvez télécharger mon CV PDF en bas de page. 😎
             </p>
           </div>
           <div className="conttain-ppp">
